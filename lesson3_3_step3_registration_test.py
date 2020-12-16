@@ -1,4 +1,3 @@
-import pytest
 from selenium import webdriver
 
 
@@ -39,7 +38,3 @@ class TestRegistration:
         link = "http://suninjuly.github.io/registration2.html"
         registration_result = self.fill_form(link)
         assert "Congratulations! You have successfully registered!" == registration_result
-
-
-if __name__ == "__main__":
-    pytest.main()
